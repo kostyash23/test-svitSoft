@@ -55,6 +55,7 @@ body {
   color: #4e254f;
 }
 .nav {
+  cursor: pointer;
   position: absolute;
   top: 32px;
   right: 80px;
@@ -72,7 +73,9 @@ body {
 }
 
 .nav-menu {
-  display: block;
+  display: flex;
+  flex-direction: column;
+
   top: 0;
   left: 0;
   position: fixed;
@@ -121,7 +124,10 @@ body {
 }
 .disclaimer {
   font-size: 12px;
-  position: absolute;
+
+  margin-left: 180px;
+  margin-top: auto;
+  padding-bottom: 50px;
   bottom: 30px;
   left: 180px;
   color: rgba(78, 37, 79, 0.25);
@@ -434,6 +440,10 @@ body {
   }
 }
 @media screen and (max-width: 515px) {
+  .logo-menu {
+    padding-top: 35px;
+    padding-bottom: 32px;
+  }
   .btn-slayder {
     display: none;
   }
@@ -525,11 +535,18 @@ body {
     top: 16px;
     right: 20px;
   }
+  .menu-list {
+    margin-top: 104px;
+    margin-left: 180px;
+    margin: 0 auto;
+  }
   .menu-list li {
     padding: 5px 0;
   }
   .menu-list li a {
     font-size: 16px;
+  }
+  .disclaimer {
   }
 }
 .active {
