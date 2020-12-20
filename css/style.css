@@ -547,6 +547,7 @@ body {
     font-size: 16px;
   }
   .disclaimer {
+    margin-left: 50px;
   }
 }
 .active {
